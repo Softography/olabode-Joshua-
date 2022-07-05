@@ -8,28 +8,36 @@ const assignment = {};
  * Challenge - 1
  * 
  * Calculate and return the sum of the numbers in an array.
- * If you did Challenge - 1, remove the comment in the line just after this function
- * 
- * @param {Array} arrayOfNumbers the array of numbers to sum
- * @returns number the sum of the numbers
- */
+ * If you did Challenge - 1, remove the comment in the line just after this function*/
+
+const arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    let sumOfNumbers = 0;
+    for (let i = 0; i < arrayOfNumbers.length; i++)
+    sumOfNumbers += arrayOfNumbers[i]
+    return sumOfNumbers
 }
+
+console.log("The sum of number is : " +sumOfNumbers(arrayOfNumbers));
+
 // assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
  * 
  * Count all even numbers within an array of numbers.
- * If you did Challenge - 2, remove the comment in the line just after this function
- * 
- * @param {Array} arrayOfNumbers the array containing even or non-even numbers
- * @returns number the count of even numbers
- */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+ * If you did Challenge - 2, remove the comment in the line just after this function*/
+ 
+ const countNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,21,22,23,24,25,26];
+
+function evenNumbers(arrayOfNumbers){
+    for (let i = 2; arrayOfNumbers > i; i++){
+        if(arrayOfNumbers % i == 0){
+            return arrayOfNumbers > 0;
+        }
+    }
 }
+console.log(`even numbers are : ${countNumbers.filter(evenNumbers)}`);
 // assignment.countEvenNumbers = countEvenNumbers;
 
 /**
